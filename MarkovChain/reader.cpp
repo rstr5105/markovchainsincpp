@@ -48,9 +48,9 @@ void Reader::read() {
 vector<string> Reader::parseForChainGen(string s){
 	regex e("\\p{Punct}");
 	regex digits("\\d+");
-	string s1;
-	regex_replace(s, e, "");
-	s1 = regex_replace(s, digits, "");
+	string s1 = s;
+	regex_replace(s1, e, "");
+	s1 = regex_replace(s1, digits, "");
 	vector<string>output;
 	istringstream iss(s1);
 	copy(istream_iterator<string>(iss),
