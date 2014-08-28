@@ -24,7 +24,7 @@ Logger::Logger() {
 	char mbstr[100];
 	strftime(mbstr, 100, "%Y-%m-%d", &getTime());
 	string timestamp(mbstr);
-	this->path = ".\\Logs\\" + timestamp;
+	this->path = "./Logs/" + timestamp;
 	logFile.open(path, ofstream::app);
 
 }
