@@ -28,7 +28,7 @@
       <Filter>Source Files\MarkovChain</Filter>
     </ClCompile>
     <ClCompile Include="logger.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\logger</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -14,8 +14,9 @@ int main(){
 
 	vector<string>test;
 
-	//slog->Log("System Running!");
-	
+	printf("Opening Log\n");
+	slog->Log("Log System Running!\n");
+	printf("Log Opened Successfully\n");
 	MarkovChain mC;
 	vector<string> vec;
 	vec.push_back("Hello");
@@ -55,7 +56,7 @@ int main(){
 	vec.clear();
 	mC.printChains();
 
-	
+
 
 	printf("\n\n\n\n\n\n\n\nPress Enter/Return to Continue!");
 	cin.get();

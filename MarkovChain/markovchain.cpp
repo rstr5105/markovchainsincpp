@@ -44,7 +44,7 @@ void MarkovChain::printChains() {
 	for (iter1 = chains.begin(); iter1 != chains.end(); iter1++){
 		printf("====%s\n", iter1->first.c_str());
 		for (iter2 = iter1->second.begin(); iter2 != iter1->second.end(); iter2++){
-			printf("\t++++%s\t%i\n", iter2->first.c_str(),  iter2->second);
+			printf("\t++++%s\t%i\n", iter2->first.c_str(), iter2->second);
 		}
 	}
 

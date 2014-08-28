@@ -11,7 +11,7 @@ public:
 	Logger();
 	~Logger();
 	//methods
-	Logger* Instance();
+	static Logger* Instance();
 	void Log(std::string msg);
 private:
 	//members
