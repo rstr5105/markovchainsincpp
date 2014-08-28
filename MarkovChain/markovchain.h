@@ -3,12 +3,12 @@
 #include <map>
 #include <string>
 
-class markovchain
+class MarkovChain
 {
 public:
 	//ctor & detour
-	markovchain();
-	virtual ~markovchain();
+	MarkovChain();
+	virtual ~MarkovChain();
 	//methods
 	void genChains(std::vector<std::string>);
 	std::map<std::string, std::map<std::string, int>> getChains();
