@@ -19,6 +19,9 @@
     <Filter Include="Source Files\logger">
       <UniqueIdentifier>{f6eaba1e-dfb8-4f37-8fea-d4fd92ce95ae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Reader">
+      <UniqueIdentifier>{44f7c6b2-d4c0-47e1-af90-b8e240f77568}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -30,12 +33,18 @@
     <ClCompile Include="logger.cpp">
       <Filter>Source Files\logger</Filter>
     </ClCompile>
+    <ClCompile Include="reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="markovchain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

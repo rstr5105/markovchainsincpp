@@ -67,10 +67,12 @@
     <ClCompile Include="logger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="markovchain.cpp" />
+    <ClCompile Include="reader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logger.h" />
     <ClInclude Include="markovchain.h" />
+    <ClInclude Include="reader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

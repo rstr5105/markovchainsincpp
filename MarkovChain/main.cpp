@@ -4,61 +4,27 @@
 
 #include "logger.h"
 #include "markovchain.h"
-
+#include "reader.h"
 
 #define slog Logger::Instance()
 
+void init();
+void exit();
+
 using namespace std;
 int main(){
-	printf("Hello World!\n");
-
-	vector<string>test;
-
-	printf("Opening Log\n");
-	slog->Log("Log System Running!\n");
-	printf("Log Opened Successfully\n");
+	init();
 	MarkovChain mC;
-	vector<string> vec;
-	vec.push_back("Hello");
-	vec.push_back("how");
-	vec.push_back("are");
-	vec.push_back("you");
-	vec.push_back("today");
-	mC.genChains(vec);
-	vec.clear();
-	vec.push_back("Hello");
-	vec.push_back("choclate");
-	mC.genChains(vec);
-	vec.clear();
-	vec.push_back("how");
-	vec.push_back("does");
-	vec.push_back("it");
-	vec.push_back("do");
-	vec.push_back("that");
-	mC.genChains(vec);
-	vec.clear();
-	vec.push_back("how");
-	vec.push_back("about");
-	vec.push_back("this");
-	mC.genChains(vec);
-	vec.clear();
-	vec.push_back("does");
-	vec.push_back("it");
-	vec.push_back("work");
-	mC.genChains(vec);
-	vec.clear();
-	vec.push_back("how");
-	vec.push_back("does");
-	vec.push_back("it");
-	vec.push_back("work");
-	vec.push_back("now");
-	mC.genChains(vec);
-	vec.clear();
-	mC.printChains();
+	vector<string>test;
+	Reader rdr("This 1$ a test", mC);
 
+	exit();
+}
+void init(){
+	printf("Hello World!\n");
+}
 
-
+void exit(){
 	printf("\n\n\n\n\n\n\n\nPress Enter/Return to Continue!");
 	cin.get();
-
 }
